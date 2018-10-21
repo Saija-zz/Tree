@@ -71,11 +71,10 @@ public class Main {
 	
 	
 	public void buildTree(List<Token> tokens) {
+		ParseTree tree = new ParseTree();
 		
 		for(Token t: tokens) {
-			Nodo n = new Nodo(t.token());
-			
-			System.out.println("tree : " + n);
+			tree.addNodo(t);
 			
 		}
 		

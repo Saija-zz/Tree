@@ -14,7 +14,7 @@ public class Nodo{
 	public Nodo(String raiz) {
 		izquierdo = null;
 		derecho = null;
-		this.raiz = "";
+		this.raiz = raiz;
 	}
 		
 	public void izquierdo(Nodo izq) {
@@ -32,7 +32,7 @@ public class Nodo{
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub
-		return "\t\t" + this.raiz + "\t\t" + 
+		return "\t\t" + this.raiz + "\t\t\n" + 
 				"\t" + this.izquierdo + "\t\t\t\t" + this.derecho;
 	}
 	

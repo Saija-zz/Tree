@@ -15,6 +15,11 @@ public class Token{
 		return this.token;
 	}
 	
+	public boolean isOperando() {
+		return isOperando(this.token);
+	}
+	
+	
 	public static boolean isOperando(String c) {
 		boolean esOperando = false;
 		
@@ -35,6 +40,10 @@ public class Token{
 		return esOperando;
 	}
 	
+	public boolean esOperator() {
+		return esOperator(this.token); 
+	}
+	
 	public static boolean esOperator(String c) {
 		return c.length() == 1 && esOperator(c.charAt(0)); 
 	}
@@ -52,6 +61,10 @@ public class Token{
 		} 
 		
 		return operador;
+	}
+	
+	public boolean esParentesis() {
+		return esParentesis(this.token);
 	}
 	
 	public static boolean esParentesis(String c) {
